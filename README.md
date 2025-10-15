@@ -10,3 +10,4 @@ A Tcl/Tk-based desktop application for transcribing scanned documents (e.g., his
 - **docs/**: Documentation and notes.
 - **tests/**: Test scripts and data.
 
+- GitHub sign-in complete.
