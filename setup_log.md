@@ -8,6 +8,8 @@
 - **Project Goal**: Transcription app with PyQt GUI, offline-first, lightweight
 
 ## Setup Steps
+
+### 1. Checked Python Environment (2025-10-16)
 - Command: `python3 --version``
   - Output: Python 3.11.2
 - Command: `pip3 --version`
@@ -17,12 +19,19 @@
 - Command: `python3 -c "import tkinter; print('Tkinter imported successfully')"
   - Output: ModuleNotFoundError: no module named 'tkinter'
 
-
-## 2. Install PyQt5 (Pending)
+### 2. Install PyQt5 (2025-10-16)
 - Command: `pip3 install PyQt5`
-- Command: `pip3 list | grep PyQt5`
-- Command: `python3 -c "import PyQt5.QtWidgets; print('PyQt5 imported successfully')"
-- Status: Awaiting execution and output.
+  - Output: Error (externally-managed-environment, PEP 668)
+- Command: `sudo apt update`
+  - Output: Package lists up-to-date
+- Command: `sudo apt install python3-pyqt5`
+  - Output: Installed python3-pyqt5 (5.15.9+dfsg-1), python3-pyqt5.sip (12.11.1-1), and dependencies (~6MB downloaded, 25.6MB disk space)
+- Command: `python3 -c "import PyQt5.QtWidgets; print('PyQt5 imported successfully')"`
+  - Output: PyQt imported successfully
+- Command: `dpkg -l | grep pyqt5`
+  - Output: python3-pyqt5 (5.15.9+dfsg-1), python3-pyqt5.sip (12.11.1-1)
+- Notes: Used apt to avoid breaking system Python. Wi-Fi stable for download.
+
 
 ## Notes
 - Limited Wi-Fi Access: Plan downloads carefully
