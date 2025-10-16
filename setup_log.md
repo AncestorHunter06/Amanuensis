@@ -32,6 +32,10 @@
   - Output: python3-pyqt5 (5.15.9+dfsg-1), python3-pyqt5.sip (12.11.1-1)
 - Notes: Used apt to avoid breaking system Python. Wi-Fi stable for download.
 
+### 3. Test PyQt5 Window (2025-10-16)
+- Command: `python3 ~/projects/amanuensis/test_pyqt5.py`
+  - Output: Window displayed (400x300, titled "Amanuensis Test Window").
+- Notes: Window worked, Wayland warning harmless. Ready for GUI design.
 
 ## Notes
 - Limited Wi-Fi Access: Plan downloads carefully
