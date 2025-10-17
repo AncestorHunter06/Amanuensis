@@ -1,6 +1,24 @@
-*.o
-*.swp
-*.bak
+# Python
+*.pyc
 __pycache__/
+*.pyo
+*.pyd
+.Python
+venv/
+*.egg-info/
+dist/
+build/
+
+# PyQt
+*.qrc
+*.ui
+resources.py
+
+# IDEs
+.vscode/
+.idea/
+
+# Misc
 *.log
-*.tar.gz
+*.bak
+*.swp
