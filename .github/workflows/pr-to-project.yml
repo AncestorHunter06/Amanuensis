@@ -10,4 +10,4 @@ jobs:
         with:
           project-url: https://github.com/AncestorHunter06/Amanuensis/projects/1
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          status: In progress
+          status: In Progress
