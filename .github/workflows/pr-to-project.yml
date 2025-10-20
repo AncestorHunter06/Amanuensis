@@ -1,7 +1,13 @@
-name: Move PR to In progress on Open
+name: Move PR to In Progress on Open
 on:
   pull_request:
     types: [opened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  projects: write
+
 jobs:
   add-to-project:
     runs-on: ubuntu-latest
