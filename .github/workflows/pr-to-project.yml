@@ -6,7 +6,7 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v1
+      - uses: github/add-to-project@v2
         with:
           project-url: https://github.com/AncestorHunter06/Amanuensis/projects/1
           github-token: ${{ secrets.GITHUB_TOKEN }}
