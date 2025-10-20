@@ -1,0 +1,13 @@
+name: Move PR to In progress on Open
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v2
+        with:
+          project-url: https://github.com/AncestorHunter06/Amanuensis/projects/1
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          status: In progress
