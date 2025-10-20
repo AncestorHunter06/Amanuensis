@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
   pull-requests: write
-  projects: write
+  repository_projects: write
 
 jobs:
   move-linked-issues-to-in-progress:
